@@ -1,0 +1,177 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header{
+    padding: 23px 250px 33px 250px;
+}
+
+.navigation{
+    width: 943px;
+    text-align: center;
+    border-bottom: 1px solid #828282;
+    margin: auto;
+    box-shadow: 0px 10px 10px -11px #828282; 
+}
+.list{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.list-item{
+    display: inline;
+    margin: 0px 20px;
+}
+
+.link{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #828282;
+    text-shadow: 0px 5px 10px #828282;
+}
+
+.link--active {
+    text-decoration: underline;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: black;
+    text-shadow: 0px 5px 10px #828282;
+  }
+
+.title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 47.3392px;
+    line-height: 64px;
+    color: #070707;
+    margin-top: 0%;
+}
+
+.personal{
+    width: 943px;
+    margin: 0 auto;
+}
+
+.personal-image{
+    width: 100%;
+}
+
+.subtitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+.about-me{
+    text-align: center;
+    background-color: #F6F6F6;
+    padding: 100px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 100px;
+}
+
+.skills{
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 100px;
+    margin-bottom: 83px;
+}
+
+.skills-block{
+    margin-top: 80px;
+}
+
+.skill{
+    display: inline-block;
+    padding: 0 45px;
+    border-top: none;
+}
+
+.skill-description{
+    font-family: Gilroy-Bold;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    color: #828282;
+}
+
+.stars-block {
+    margin-top: 60px;
+}
+
+.star {
+    margin-right: 8px;
+}
+
+.portfolio{
+    text-align: center;
+    background-color: #F6F6F6; 
+    padding-top: 118px;
+    padding-bottom: 40px;
+}
+
+.port-img{
+    padding-top: 40px;
+}
+
+.port-description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #070707;
+    padding-bottom: 60px;
+
+}
+
+.contacts{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.button{
+    margin-top: 60px;
+    margin-bottom: 46px;
+    background: #070707;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 15px;
+}
+
+.footer-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #828282;   
+    margin-bottom: 30px;
+}
+
+.social-img{
+    padding: 0 30px 40px 30px;
+}

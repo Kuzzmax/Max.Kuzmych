@@ -175,3 +175,21 @@
 .social-img{
     padding: 0 30px 40px 30px;
 }
+
+/* --------additional option of presenting starts-------- */
+
+.star{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url(images/Star2.png);
+    background-repeat: no-repeat;
+}
+
+.stars--1 .star:nth-child(-n + 3),
+.stars--2 .star:nth-child(-n + 2),
+.stars--3 .star:nth-child(-n + 3),
+.stars--4 .star:nth-child(-n + 3)
+{
+    background-image: url(images/Star.png);
+}

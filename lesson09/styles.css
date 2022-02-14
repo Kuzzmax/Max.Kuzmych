@@ -3,6 +3,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+code{
+    background-color: #eee;  
+}
+
 .header{
     position: relative;
 }
@@ -84,8 +88,4 @@
     line-height: 48px;
     margin-top: -50px;
     margin-bottom: 100px;
-}
-
-code{
-    background-color: #eee;  
 }

@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    vertical-align: middle;
+}
+
+a:visited{
+    color: #2F281E;
+}
+
+.header{
+    width: 100%;
+    margin-top: 20px;
+    height: 80px;
+}
+
+.top-list{
+    list-style: none;   
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.header-item{
+    display: inline-block;
+}
+
+.nav-list{
+    padding: 0;
+    margin-left: 320px;
+}
+
+.list-item{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav-link{
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 0;
+}
+.buttons{
+    margin-left: 50px;
+}
+
+.button1{
+    border: 1px solid #BCD0E5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 46px;
+    width: 102px;
+    background-color: white;
+    /* text */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #173A56;
+}
+
+.button2{
+    border: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 46px;
+    width: 102px;
+    background: #FF9900;
+    margin-left: 15px;
+    /* text */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffff;
+}
+
+.first-block{
+    margin-top: 60px;
+}
+
+.fist-block-main-list{
+    list-style: none;   
+    padding: 0;
+    width: 100%;  
+    text-align: center;
+}
+
+.right-content, .left-content{
+    display: inline-block;
+}
+
+.left-content-list{
+    list-style: none;   
+    padding: 0;
+    text-align: left;
+}
+
+.right-content{
+    margin-left: 90px;
+}
+
+.left-content{
+    vertical-align: middle;
+}
+
+.first-block-solid{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 54px;
+    color: #2F281E;
+}
+
+.first-block-regular{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #544837; 
+    width: 460px;
+    height: 95px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+
+}
+
+.first-block-button{
+    width: 175px;
+    height: 53px;
+    background: #FF9900;
+    border-radius: 4px;
+    border: none;
+    margin-right: 30px;
+    /* text */
+    color: white;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    }
+
+a.first-block-link{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #FF9900;
+    vertical-align: middle;
+}

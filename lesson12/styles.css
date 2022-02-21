@@ -71,6 +71,13 @@ code{
     margin-top: 50px; 
     }
 
+.bg-img{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+}
+
 .text-solid{
     font-family: Roboto;
     font-style: normal;

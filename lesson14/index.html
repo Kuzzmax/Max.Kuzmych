@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Forms</title>
+</head>
+<body>
+
+<!-- -----create-account----- -->
+    <div class="create-account">
+
+        <h1 class="create-account__title text-solid">Create an Account</h1>
+
+        <form class="create-account__main-form">
+            
+            <div class="main-form__row1">
+
+                <div class="row1__col1">
+                    <label class="text-regular" for="fname">    
+                        First Name
+                    </label>
+                    <input type="text" name="firstname" id="fname" required>
+                </div>
+
+                <div class="row1__col2">
+                    <label class="text-regular" for="lname">
+                        Last Name
+                    </label>
+                    <input type="text" name="lastname" id="lname" required>
+                </div>
+
+            </div>
+
+            <div class="main-form__row2">
+                <label class="text-regular" for="email">
+                    E-mail
+                </label>
+                <input type="email" name="email" id="email" required>
+                <span class="text-shadow">
+                    We'll never share your email with anyone else.
+                </span>
+            </div>
+
+            
+            <div class="main-form__row3">
+
+                <label class="radio__main text-regular" for="male">
+                    <input 
+                        class="radio__gender"
+                        type="radio" 
+                        name="gender"
+                        value="male"
+                        id="male"
+                    >
+                    <div class="radio__gender--custom"></div>
+                    Male
+                </label>
+
+                <label class="radio__main text-regular" for="female">
+                    <input 
+                        class="radio__gender"
+                        type="radio" 
+                        name="gender"
+                        value="female"
+                        id="female"
+                    >
+                    <div class="radio__gender--custom"></div>
+                    Female
+                </label>
+
+            </div>
+
+            <div class="main-form__row4 cnty+city">
+
+                <div class="row4__col1">
+                    <label class="text-regular" for="country">Country</label>
+                    <select class="text-select" name="country" id="country">
+                        <option value="select" selected hidden>Select</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>   
+                </div>
+                
+                <div class="row4__col2">
+                    <label class="text-regular" for="city">City</label>
+                    <input type="text" name="city" id="city" required>
+                </div>
+            </div>
+
+            <div class="main-form__row5">
+                <button class="signup-button btn" type="submit">Sign Up</button>
+            </div>
+
+        </form>
+
+        <div class="create-account__terms text-shadow">
+            By clicking the 'Sign Up' button, you confirm that you accept our
+            <a class="terms__link" href="">Terms of Use</a>
+            and
+            <a class="terms__link" href="">Privacy Policy</a>
+        </div>
+
+        <div class="create-account__login text-regular">
+            Have an account?
+            <a class="login__link" href="">Log In</a>
+        </div>
+
+    </div>
+
+<!-- -----profile----- -->
+    <div class="profile">
+
+        <h2 class="profile__title text-bold">Profile</h2>
+
+        <div class="profile__photo-section">
+
+            <img src="photo.png" alt="Photo">
+            <div class="photo-sectio__right">
+                <div class="photo-section__buttons">
+                    <label class="file-button" for="file">
+                        <input name="file" id="file" type="file" hidden>
+                    </label>
+                    <button class="remove-button"></button>
+                </div>
+                <span class="text-shadow">Up to 1 MB (300x300 px)</span>
+            </div>
+
+        </div>
+
+        <div class="profile__row1">
+
+            <div class="row1__col1">
+                <label class="text-regular" for="name">    
+                    Name
+                </label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="row1__col2">
+                <label class="text-regular" for="e-mail">
+                    E-mail
+                </label>
+                <input type="text" name="email" id="e-mail" required>
+            </div>
+            
+        </div>
+
+        <div class="profile__row2 cntry+city">
+
+            <div class="row2__col1">
+                <label class="text-regular" for="country">Country</label>
+                <select class="text-select" name="country" id="country">
+                    <option value="select" selected hidden>Select</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>   
+            </div>
+            
+            <div class="row2__col2">
+                <label class="text-regular" for="city">City</label>
+                <input type="text" name="city" id="city" required>
+            </div>
+
+        </div>
+
+        <div class="profile__row3">
+
+            <div class="row3__col1">
+                <label class="text-regular" for="zip">    
+                    Zip Code
+                </label>
+                <input type="text" name="zip" id="zip" required>
+            </div>
+
+            <div class="row3__col2">
+                <label class="text-regular" for="e-mail">
+                    Phone Number
+                </label>
+                <input type="tel" name="pn" id="pn" required>
+            </div>
+
+        </div>
+
+        <div class="profile__row4">
+            <button class="save-button btn" type="submit">Save changes</button>
+        </div>
+        
+    </div>
+
+</body>
+</html>

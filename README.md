@@ -1,1 +1,1 @@
-Here is a link for my [Homeworks](https://kuzzmax.github.io/Max.Kuzmych/).
+Here is a link for repository with my [Homeworks](https://kuzzmax.github.io/Max.Kuzmych/).

@@ -1,0 +1,242 @@
+@import "_parts/reset"; //tried how import works
+
+$borderstyle: 1px solid #FFCC00;
+$maincolor: #FFCC00; 
+
+//just tried how mixin works
+@mixin text_subtitle{
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #898F8F;
+}
+
+//tried how extend works
+%text_title{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 66px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    height: 157px;    
+    width: 450px; 
+    margin: 100px auto 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: $borderstyle;
+
+    .subtitle{
+        padding-top: 10px;
+        // font-family: 'Raleway';
+        // font-weight: 500;
+        // font-size: 18px;
+        // line-height: 24px;
+        // text-align: center;
+        // text-transform: uppercase;
+        // color: #898F8F;
+        @include text_subtitle;
+    }
+
+    .title{
+        padding-bottom: 4px;
+        // font-family: 'Roboto';
+        // font-weight: 900;
+        // font-size: 60px;
+        // line-height: 66px;
+        // text-align: center;
+        // text-transform: uppercase;
+        @extend %text_title;
+        color: $maincolor; 
+    }
+
+   .title__logo{
+       width: 32.5px;
+       height: 20px;
+       background-color: white;
+       position: relative;
+       z-index: 1;
+       top: 10px;
+       left: 50%;
+       transform: translateX(-50%);
+   }
+}
+
+main{
+    width: 1150px;
+    height: 610px;
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .photo__border{
+        width: 430px;
+        height: 430px;
+        position: relative;
+        left: 60px;
+        bottom: 25px;
+        padding: 15px;
+
+        .top, .bottom {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+          }
+          
+          .top {
+            top: 0;
+            border-top: $borderstyle;
+          }
+          
+          .bottom {
+            bottom: 0;
+            border-bottom: $borderstyle;
+          }
+          
+          .left {
+            left: 0;
+            border-left: $borderstyle;
+          }
+          
+          .right {
+            right: 0;
+            border-right: $borderstyle;
+          }
+    }
+
+    .middleline{
+        border-right: $borderstyle;
+        height: 560px;
+        position: relative;
+        top: -25px;
+    }
+
+    .description{
+        width: 430px;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 59px;
+        bottom: 24px;
+
+        .description__name{
+            font-family: 'Roboto';
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #666666;
+        }
+
+        .horline{
+            border-bottom: $borderstyle;
+            width: 100px;
+            margin: 0 auto;
+            padding-top: 20px
+        }
+
+        .description__position{
+            font-family: 'Raleway';
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #666666;
+            padding-top: 30px;
+        }
+
+        .description__socials{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            margin: 22px auto;
+
+            .social__icon{
+                background-color: #ffff;
+                fill: #CCCCCC;
+                border-radius: 50%;
+                outline: 2px solid #CCCCCC;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+
+                &:hover{
+                    fill:$maincolor;
+                    outline: 2px solid $maincolor;
+                }
+            }
+        }
+
+        .description__text{
+            font-family: 'Raleway';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: #333333;
+            padding-top: 27px;
+        }
+
+        .decorline{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            margin: 0 auto;
+            padding-top: 16px;
+
+            .decorline_1{
+                border-bottom: 4px solid #FFCC00;
+                width: 10px;
+            }
+
+            .decorline_2{
+                border-bottom: 4px solid #FFCC00;
+                width: 20px;
+            }
+
+            .decorline_3{
+                border-bottom: 4px solid #FFCC00;
+                width: 10px;
+            }
+
+        }
+
+        .description__button{
+            width: 118px;
+            height: 24px;
+            border: $borderstyle;
+            background-color: white;
+            padding: 5px 10px;
+            margin: 25px auto;
+            cursor: pointer;
+
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #666666;
+        }
+
+    }
+
+}

@@ -1,0 +1,43 @@
+@media (max-width: 978px) {
+
+    body {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .skills .wrapper__skill {
+        padding-top: 0; 
+    }
+    .skill{
+        flex: 50%;
+        padding-top: 40px;
+    }
+    .flex{
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header{
+        display: none;
+    }
+    .lang{
+        display: none;
+    }
+    .wrapper__skill{
+        flex-direction: column;
+    }
+    .info__block{
+        flex-direction: column;
+    }
+    .info_flex{
+        display: flex;
+    }
+    .hamb_menu{
+        display: block;
+    }
+    .info__block .position{
+        padding-top: 25px;
+    }
+}

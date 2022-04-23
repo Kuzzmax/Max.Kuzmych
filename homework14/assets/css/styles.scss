@@ -1,4 +1,4 @@
-@import "_parts/reset"; //tried how import works
+@import "parts/reset";
 
 $borderstyle: 1px solid #FFCC00;
 $maincolor: #FFCC00; 
@@ -218,25 +218,28 @@ main{
             }
 
         }
-
-        .description__button{
-            width: 118px;
-            height: 24px;
-            border: $borderstyle;
-            background-color: white;
-            padding: 5px 10px;
-            margin: 25px auto;
-            cursor: pointer;
-
-            font-family: 'Open Sans';
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 14px;
-            text-align: center;
-            text-transform: uppercase;
-            color: #666666;
-        }
-
     }
+}
 
+.description__button{
+    width: 118px;
+    height: 24px;
+    border: $borderstyle;
+    background-color: white;
+    padding: 5px 10px;
+    margin: 25px auto;
+    cursor: pointer;
+
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #666666;
+
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        color: black;
+    }
 }

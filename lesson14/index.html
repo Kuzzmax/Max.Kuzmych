@@ -17,7 +17,7 @@
 
         <h1 class="create-account__title text-solid">Create an Account</h1>
 
-        <form class="create-account__main-form">
+        <form action="#" method="post" class="create-account__main-form">
             
             <div class="main-form__row1">
 
@@ -57,6 +57,7 @@
                         name="gender"
                         value="male"
                         id="male"
+                        checked
                     >
                     <div class="radio__gender--custom"></div>
                     Male
@@ -119,79 +120,81 @@
 
         <h2 class="profile__title text-bold">Profile</h2>
 
-        <div class="profile__photo-section">
+        <form action="#" method="post">
+            <div class="profile__photo-section">
 
-            <img src="photo.png" alt="Photo">
-            <div class="photo-sectio__right">
-                <div class="photo-section__buttons">
-                    <label class="file-button" for="file">
-                        <input name="file" id="file" type="file" hidden>
-                    </label>
-                    <button class="remove-button"></button>
+                <img src="photo.png" alt="Photo">
+                <div class="photo-sectio__right">
+                    <div class="photo-section__buttons">
+                        <label class="file-button" for="file">
+                            <input name="file" id="file" type="file" hidden>
+                        </label>
+                        <button class="remove-button"></button>
+                    </div>
+                    <span class="text-shadow">Up to 1 MB (300x300 px)</span>
                 </div>
-                <span class="text-shadow">Up to 1 MB (300x300 px)</span>
+    
             </div>
-
-        </div>
-
-        <div class="profile__row1">
-
-            <div class="row1__col1">
-                <label class="text-regular" for="name">    
-                    Name
-                </label>
-                <input type="text" name="name" id="name" required>
+    
+            <div class="profile__row1">
+    
+                <div class="row1__col1">
+                    <label class="text-regular" for="name">    
+                        Name
+                    </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+    
+                <div class="row1__col2">
+                    <label class="text-regular" for="e-mail">
+                        E-mail
+                    </label>
+                    <input type="text" name="email" id="e-mail" required>
+                </div>
+                
             </div>
-
-            <div class="row1__col2">
-                <label class="text-regular" for="e-mail">
-                    E-mail
-                </label>
-                <input type="text" name="email" id="e-mail" required>
+    
+            <div class="profile__row2 cntry+city">
+    
+                <div class="row2__col1">
+                    <label class="text-regular" for="country">Country</label>
+                    <select class="text-select" name="country" id="ccountry">
+                        <option value="select" selected hidden>Select</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>   
+                </div>
+                
+                <div class="row2__col2">
+                    <label class="text-regular" for="city">City</label>
+                    <input type="text" name="city" id="ccity" required>
+                </div>
+    
             </div>
-            
-        </div>
-
-        <div class="profile__row2 cntry+city">
-
-            <div class="row2__col1">
-                <label class="text-regular" for="country">Country</label>
-                <select class="text-select" name="country" id="country">
-                    <option value="select" selected hidden>Select</option>
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                </select>   
+    
+            <div class="profile__row3">
+    
+                <div class="row3__col1">
+                    <label class="text-regular" for="zip">    
+                        Zip Code
+                    </label>
+                    <input type="text" name="zip" id="zip" required>
+                </div>
+    
+                <div class="row3__col2">
+                    <label class="text-regular" for="e-mail">
+                        Phone Number
+                    </label>
+                    <input type="tel" name="pn" id="pn" required>
+                </div>
+    
             </div>
-            
-            <div class="row2__col2">
-                <label class="text-regular" for="city">City</label>
-                <input type="text" name="city" id="city" required>
+    
+            <div class="profile__row4">
+                <button class="save-button btn" type="submit">Save changes</button>
             </div>
-
-        </div>
-
-        <div class="profile__row3">
-
-            <div class="row3__col1">
-                <label class="text-regular" for="zip">    
-                    Zip Code
-                </label>
-                <input type="text" name="zip" id="zip" required>
-            </div>
-
-            <div class="row3__col2">
-                <label class="text-regular" for="e-mail">
-                    Phone Number
-                </label>
-                <input type="tel" name="pn" id="pn" required>
-            </div>
-
-        </div>
-
-        <div class="profile__row4">
-            <button class="save-button btn" type="submit">Save changes</button>
-        </div>
+        </form>
         
     </div>
 

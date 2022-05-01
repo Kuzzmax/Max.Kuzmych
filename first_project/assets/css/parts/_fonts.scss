@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Avenir-Black';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+        url('../fonts/Avenir-Black.woff2') format('woff2'),
+        url('../fonts/Avenir-Black.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Avenir-Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../fonts/Avenir-Medium.woff2') format('woff2'),
+        url('../fonts/Avenir-Medium.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Helvetica-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/Helvetica-Bold.woff2') format('woff2'),
+        url('../fonts/Helvetica-Bold.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Helvetica-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/Helvetica-Regular.woff2') format('woff2'),
+        url('../fonts/Helvetica-Regular.woff') format('woff');
+  }

@@ -99,7 +99,7 @@ img{
     background-origin: content-box;
     cursor: pointer;
     padding-right: 40px;
-    margin-left: 40px;
+    margin-left: 30px;
 
     @include avenir-black;
     font-size: 16px;
@@ -109,7 +109,7 @@ img{
     
     &:hover{    
         box-shadow: 0px 10px 10px rgba(75, 93, 104, 0.5);
-        transition: all .3s ease-in
+        transition: all .3s ease-in;
     }
 }
 .hamburger{
@@ -117,6 +117,7 @@ img{
 }
 //_____sidebar_____
 .sidebar {
+    position: relative;
     width: 100%;
     position: fixed;
     left: 0;
@@ -126,8 +127,7 @@ img{
     transform: translateY(-100%);
     transition: all .5s ease;
     &.open {
-        // transform: translateX(0);
-        transform: translateY(130px);
+        transform: translateY(140px);
     }
     ul {
         flex-direction: column;
@@ -136,9 +136,27 @@ img{
         font-size: 16px;
         line-height: 160%;
         color: #FFFFFF;
+        padding-top: 20px;
         li {
             text-align: center;
             padding-bottom: 20px;
+            a{
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    width: 0;
+                    height: 2px;
+                    background-color: #fff;
+                    left: 50%;
+                    bottom: 0;
+                    transition: all .3s ease-in-out;
+                }
+                &:hover::after{
+                    width: 100%;
+                    left: 0;
+                }
+            }
         }
     }
 }
@@ -202,22 +220,33 @@ img{
     background: rgba(240, 99, 184, 0.15);
     border-radius: 50px;
     display: grid;
-    grid-template-columns: 42% auto;
-    align-items: center;
+    grid-template-columns: minmax(10%, auto) auto;
+    grid-gap: 5.7%;
+    padding: 10px;
+}
+.description_img{
+    align-self: center;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 .description_info{
-    max-width: 475px;
-    padding: 20px;//temporary
-    padding-left: 60px;
+    padding-top: 112px;
+    padding-bottom: 115px;
+    padding-right: 5%;
+
     .description_title{
         @include hel-bold;
         font-size: 40px;
         line-height: 130%;
         color: #212353;
+
     }
     .description_text{
-        padding-top: 40px;
+        max-width: 470px;
+        padding-top: 39px;
         @include avenir_med;
         font-size: 18px;
         line-height: 160%;
@@ -227,7 +256,7 @@ img{
 
 //_____features section_____
 .features{
-    padding-top: 150px;
+    padding-top: 146px;
 }
 .features_info{
     margin: 0 auto;
@@ -255,19 +284,30 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    // grid-template-rows: minmax(1fr, 442px) minmax(1fr, 442px);
     justify-items: end;
     .feature_wrapper{
     }
     .feature_list_item{
+        position: relative;
         background-repeat: no-repeat;
         background-origin: content-box;
         background-size: 100% 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
         min-width: 442px;
-        margin-bottom: 50px;
+        .feature_img{
+            position: absolute;
+            top: 70px;
+            left: -105px; // add classes for every img and then center
+        }
+        .feature_content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 168px;
+            padding-top: 59px;
+        }
     }
 }
 
@@ -293,7 +333,6 @@ img{
     font-size: 24px;
     line-height: 130%;
     color: #212353;
-    padding-top: 50px;
 }
 
 .item_text{
@@ -303,7 +342,8 @@ img{
     line-height: 160%;
     color: #4B5D68;
     max-width: 220px;
-    padding-top: 20px;
+    padding-top: 30px;
+    min-height: 210px
 }
 
 .item_link{
@@ -312,11 +352,12 @@ img{
     line-height: 160%;
     letter-spacing: 0.005em;
     color: #212353;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 32px;
+
     img{
         position: relative;
         top: 4px;
+        left: 15px;
     }
 }
 
@@ -340,7 +381,7 @@ img{
     &_card{
         display: flex;
         // max-width: 645px;
-        width: 57%;
+        width: 57.5%;
         background: #FFFFFF;
         box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
         border-radius: 20px;
@@ -355,9 +396,9 @@ img{
     justify-self: end;
 }
 .card_content{
-    max-width: 385px;
-    padding-left: 30px;
-    padding-top: 20px;
+    max-width: 425px;
+    padding-left: 28px;
+    padding-top: 22px;
     .card_name{
         @include avenir-black;
         font-size: 18px;
@@ -379,7 +420,7 @@ img{
         font-size: 18px;
         line-height: 180%;
         color: #4B5D68;
-        padding-top: 20px;
+        padding-top: 19px;
         padding-bottom: 50px;
         padding-right: 30px;
     }
@@ -436,7 +477,7 @@ img{
     }
 }
 .footer_middle{
-    padding-top: 150px;
+    padding-top: 147px;
     display: flex;
     justify-content: space-between;
     .fm_left{
@@ -452,16 +493,17 @@ img{
             }
         }
         .fm_address{
-            padding-top: 65px;
+            padding-top: 67px;
             max-width: 200px;
             @include avenir_med;
             font-size: 16px;
             line-height: 180%;
             letter-spacing: 0.01em;
             color: #212353;
+            max-width: 240px;
         }
         .fm_mail{
-            padding-top: 10px;
+            padding-top: 17px;
             max-width: 180px;
             @include avenir_med;
             font-size: 16px;
@@ -472,24 +514,28 @@ img{
     
     }
     .fm_middle{
+        padding-top: 13px;
         display: flex;
-        gap: 50px;
+        gap: 70px; //correction
         .fm_list_name{
             @include avenir-black;
             font-size: 16px;
             line-height: 160%;
-            padding-bottom: 30px;
+            padding-bottom: 35px;
         }
         .fm_list{
-           @include avenir_med;
-           font-weight: 400;
+            @include avenir_med;
+            font-weight: 400;
             font-size: 16px;
             line-height: 250%;
             color: #212353;
+            // padding-right: 50px;
         }
     }
 
     .fm_right{
+        padding-top: 13px;
+        padding-right: 35px;
         .social_title{
             @include avenir-black;
             font-size: 16px;
@@ -497,7 +543,7 @@ img{
             color: #212353;
         }
         .social_list{
-            padding-top: 30px;
+            padding-top: 35px;
             display: flex;
             gap: 14px;
             .social_list_item{
@@ -517,7 +563,7 @@ img{
 }
 
 .footer_bottom{
-    padding-top: 188px;
+    padding-top: 86px;
     padding-bottom: 96px;
     .fb_copyright{
         max-width: 300px;

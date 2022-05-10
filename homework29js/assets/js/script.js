@@ -180,17 +180,29 @@ function discount() {
 
 
 function day() {
-    let answer = true;
-    while (answer) { 
-        answer = confirm('Сьогодні понеділок! Хочеш побачити наступний день?'),
-            answer = confirm('Сьогодні вівторок! Хочеш побачити наступний день?'),
-            answer = confirm('Сьогодні середа! Хочеш побачити наступний день?'),
-            answer = confirm('Сьогодні четвер! Хочеш побачити наступний день?'),
-            answer = confirm('Сьогодні пятниця! Хочеш побачити наступний день?'),
-            answer = confirm('Сьогодні субота! Хочеш побачити наступний день?'),
-            answer = confirm('Сьогодні неділя! Хочеш побачити наступний день?');
-    }
-    alert('Гарного дня!');
+    let i = 1;
+    let text = '';
+    do { 
+        if (i > 7) {
+            i = 1;
+        }
+        if (i === 1) {
+            text = 'Monday';
+        } else if  (i===2){
+            text = 'Tuesday';
+        } else if  (i===3){
+            text = 'Wednesday';
+        } else if  (i===4){
+            text = 'Thursday';
+        } else if  (i===5){
+            text = 'Friday';
+        } else if  (i===6){
+            text = 'Saturday';
+        } else if  (i===7){
+            text = 'Sunday';
+        } 
+        i++;
+    } while(confirm('Today is: '+text+'. Show next day?'))
 }
 
 //------------------multiply

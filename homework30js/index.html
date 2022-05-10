@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>JS</title>
+</head>
+<body>
+
+    <h1 class="display-4 text-center">Minimum</h1>
+
+    <div class="container pt-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4">
+                        <p>
+                            Створи функцію, яка буде виводити кількість переданих їй аргументів.                        </p>
+                    </div>
+                    <div class="col-4">
+                        <input type="number" id="quantity" class="me-3">
+                        <button type="button" class="btn btn-info" onclick="quantity()">
+                            Quantity
+                        </button>
+                    </div>
+                    <div class="col-4">
+                        <p>Результат:</p>
+                        <div id="quantity_result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4">
+                        <p>
+                            Напиши функцію, яка приймає 2 числа і повертає :
+                            <br>
+                            -1 якщо перше число менше, ніж друге; 
+                            <br>
+                            1 - якщо перше число більше, ніж друге; 
+                            <br>
+                            0 - якщо числа рівні.                        
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <input type="number" id="compare" class="me-3">
+                        <input type="number" id="compare2" class="me-3">
+                        <button type="button" class="btn btn-info" onclick="compare()">
+                            Compare
+                        </button>
+                    </div>
+                    <div class="col-4">
+                        <p>Результат:</p>
+                        <div id="compare_result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4">
+                        <p>
+                            Напиши функцію, яка обчислює факторіал переданого їй числа.
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <input type="number" id="factorial" class="me-3">
+                        <button type="button" class="btn btn-info" onclick="factorial()">
+                            Factorial
+                        </button>
+                    </div>
+                    <div class="col-4">
+                        <p>Результат:</p>
+                        <div id="factorial_result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4">
+                        <p>
+                            Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число. Наприклад: цифри 1, 4, 9 перетворяться в число 149.                    
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <input type="number" id="digits" class="me-3">
+                        <input type="number" id="digits2" class="me-3">
+                        <input type="number" id="digits3" class="me-3">
+                        <button type="button" class="btn btn-info" onclick="digits()">
+                            Combine
+                        </button>
+                    </div>
+                    <div class="col-4">
+                        <p>Результат:</p>
+                        <div id="digits_result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4">
+                        <p>
+                            Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу. Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.                     
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <input type="number" id="area" class="me-3">
+                        <input type="number" id="area2" class="me-3">
+                        <button type="button" class="btn btn-info" onclick="area()">
+                            Area
+                        </button>
+                    </div>
+                    <div class="col-4">
+                        <p>Результат:</p>
+                        <div id="area_result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="display-4 text-center">Norma</h1>    
+
+    <div class="container pt-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4">
+                        <p>
+                            Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”. Досконале число - це число, яке дорівнює сумі всіх своїх дільників.                        
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <input type="number" id="perfect" class="me-3">
+                        <button type="button" class="btn btn-info" onclick="perfect()">
+                            Perfect?
+                        </button>
+                    </div>
+                    <div class="col-4">
+                        <p>Результат:</p>
+                        <div id="perfect_result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4">
+                        <p>
+                            Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, і виводить тільки ті числа з діапазону, які є досконалими. Використовуй написану раніше функцію, щоб дізнатися, чи є це число досконалим.                        
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <input type="number" id="dperfect" class="me-3">
+                        <input type="number" id="dperfect2" class="me-3">
+                        <button type="button" class="btn btn-info" onclick="dperfect()">
+                            Perfect numbers
+                        </button>
+                    </div>
+                    <div class="col-4">
+                        <p>Результат:</p>
+                        <div id="dperfect_result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/dist/script.dev.js"> </script>
+</body>
+</html>

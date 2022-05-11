@@ -44,5 +44,4 @@ function lazyLoad() {
     } else {
         // Possibly fall back to a more compatible method here
     }
-
 }

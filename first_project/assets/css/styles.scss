@@ -188,6 +188,7 @@ img{
         width: 170px;
         height: 60px;
         background: #9C69E2;
+        cursor: pointer;
         border: none;
         border-radius: 50px;
         margin-top: 50px;
@@ -584,6 +585,12 @@ img{
     }
 }
 
+@media screen and (max-width:1400px){
+    .headline .headline_img{
+        width: 70%;
+        right: -50px;
+    }
+}
 
 @media screen and (max-width:1150px){
     .headline{
@@ -592,6 +599,7 @@ img{
         padding-top: 150px;
         .headline_img { 
             position: static;
+            width: 85%;
         }
     }
     .description_wrapper{

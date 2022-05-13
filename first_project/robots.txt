@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: 
+Sitemap: https://kuzzmax.github.io/Max.Kuzmych/first_project/sitemap.xml
 Host: kuzzmax.github.io
+

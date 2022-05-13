@@ -90,6 +90,9 @@ img{
                 &:first-child{
                    @include avenir-black; 
                 }
+                &:hover{
+                    color: #f063b8;
+                }
             }
         }
     }
@@ -560,6 +563,11 @@ img{
             line-height: 250%;
             color: #212353;
             padding-left: 75px;
+            .fm_list_item{
+                &:hover{
+                    color: #f063b8;
+                }
+            }
         }
     }
 
